@@ -1,0 +1,24 @@
+.main-content
+{
+    flex: 5;
+    overflow: auto;
+    height: 800px;
+    padding: 30px;
+    margin-left: 250px;
+}
+
+.container.admin
+{
+    padding: 30px;
+    padding-bottom: 50px;
+}
+.header
+{
+    margin-left: 240px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    
+    box-shadow: 0 1px 0 black;
+    z-index: 999;
+}
