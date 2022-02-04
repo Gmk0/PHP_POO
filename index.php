@@ -19,7 +19,7 @@ $produit_Controller = new ProduitControl;
 
         switch ($url[0]) {
             case 'accueil':
-                require 'view/accueil.php';  
+                  
                 break;
             case 'admins':
                 $produit_Controller->chargementAllProduits();
