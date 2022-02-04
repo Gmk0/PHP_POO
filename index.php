@@ -22,7 +22,14 @@ $produit_Controller = new ProduitControl;
                   
                 break;
             case 'admins':
-                $produit_Controller->chargementAllProduits();
+               
+                if (empty($url[1])) {
+                    $produit_Controller->chargementAllProduits();
+                }
+                else if(($url[1])==="liste")
+                {
+                    $produit_Controller->getProduitById($url[2]);
+                }
                 break;
             
             default:

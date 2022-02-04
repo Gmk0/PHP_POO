@@ -28,7 +28,7 @@
                          <td class="align-middle"><?=$produits[$i]->getSeuil();?></td>
                          <td class="align-middle"><?=$produits[$i]->getCate();?></td>
                          <td class="align-middle"></td>
-                         <td ><a href="<?= URL ?>admins/v/<?=$produits[$i]->getId();?>" class="btn btn-warning">VOIR</a> </td>
+                         <td ><a href="<?= URL ?>admins/liste/<?=$produits[$i]->getId();?>" class="btn btn-warning">VOIR</a> </td>
                          <td ><a href="<?= URL ?>admins/m/<?=$produits[$i]->getId();?>" class="btn btn-primary">modifier</a> </td>
                          <form action="<?= URL ?>admins/s/<?=$produits[$i]->getId();?>" method="POST" onsubmit="return confirm('voulez vous supprimer cette element');">
                          <td ><button class="btn btn-danger" type="submit">DELETE</button></td>

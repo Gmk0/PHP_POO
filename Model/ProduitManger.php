@@ -16,10 +16,7 @@ class ProduitManager extends DataBase{
     {
         return $this->produits[]=$produits;
     }
-    public function getProduitById($id)
-    {
-        
-    }
+  
 
 
     public function chargementProduit()
@@ -35,8 +32,14 @@ class ProduitManager extends DataBase{
       $p= new produit($produit['Id'],$produit['Name'],$produit['SeuilRuture'],$produit['Description'],$produit['CategoryNum'],$produit['Num']);
         $this->ajoutProduit($p);
     }
-
-
+    }
+  
+    public function getProduitById($id){
+        for($i=0; $i < count($this->produits);$i++){
+            if($this->produits[$i]->getId() === $id){
+                return $this->produits[$i];
+            }
+        }
     }
 
 }

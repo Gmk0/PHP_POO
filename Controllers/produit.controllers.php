@@ -18,6 +18,11 @@ class ProduitControl
         $produits=$this->produits->getProduit();
         require 'view/listeProduit.php';
     }
+    public function getProduitById($id)
+    {
+        $produits =$this->produits->getProduitById($id);
+        require 'view/afficherProduit.php';
+    }
 
 
 }
