@@ -4,21 +4,56 @@
     overflow: auto;
     height: 800px;
     padding: 30px;
-    margin-left: 250px;
+    
 }
 
 .container.admin
 {
-    padding: 30px;
-    padding-bottom: 50px;
+    margin-left: 230px;
+    padding-bottom: 30px;
+    height: 800px;
 }
 .header
 {
-    margin-left: 240px;
-    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  text-align: center;
+    box-shadow: 0px 1px 0px black;
+  height:15%;
+  z-index: 999;
+   
+}
+
+.modals
+{
+    background:white;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0,0.2);
+    width: 600px;
+    max-width: 100%;
+
+
+  
+}
+.modals-container
+{
+    background-color: rgba(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    background-color: white;
-    
-    box-shadow: 0 1px 0 black;
-    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+.modals-container.show
+{
+    opacity: 1;
+    pointer-events: auto;
 }

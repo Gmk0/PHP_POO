@@ -50,8 +50,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-cog"></i>
-                        <span class="links_name">Setting</span>
+                    <a href="<?= URL ?>/admins"><i class="fas fa-cog"></i>
+                        <span class="links_name">Admins</span>
                     </a>
                 </li>
           </ul>

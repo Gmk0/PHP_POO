@@ -6,9 +6,9 @@
 
     <div class="row">
         <div class="col-6">
-            <label for=""><?=$produits->getId();?></label>
-            <label for=""><?=$produits->getName();?></label>
-          
+            <label for="">ID:<?=$produits->getId();?></label>
+                <br>
+            <label for="">Name:<?=$produits->getName();?></label>
         </div>
     </div>
   
